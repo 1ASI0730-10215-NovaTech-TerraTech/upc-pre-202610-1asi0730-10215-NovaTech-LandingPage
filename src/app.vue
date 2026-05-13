@@ -1,8 +1,8 @@
 <script setup>
 
-import Home from "./shared/presentation/views/home.vue";
+import HomeView from "./shared/presentation/views/home-view.vue";
 </script>
 
 <template>
-  <home></home>
+  <router-view/>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 
-import FooterContent from "../components/footer-content.vue";
+import FooterContentComponent from "../components/footer-content-component.vue";
 import ToolbarContent from "../components/toolbar-content.vue";
 
 import {computed, ref} from 'vue';
@@ -121,7 +121,7 @@ const contents = computed(() => ({
   </main>
 
   <footer>
-    <footer-content/>
+    <footer-content-component/>
   </footer>
 </template>
 

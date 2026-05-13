@@ -7,8 +7,10 @@ import 'primeflex/primeflex.css';
 import {Avatar, Button, Card, Drawer, Image, Menu, Menubar, SelectButton, Toolbar, Tooltip} from "primevue";
 import App from './app.vue'
 import i18n from './i18n'
+import router from "./router.js";
 
 createApp(App)
+    .use(router)
     .use(i18n)
     .use(PrimeVue, { ripple: true, theme: { preset: Material}})
     .component('pv-button', Button)
