@@ -9,8 +9,9 @@ defineProps({
 </script>
 
 <template>
-  <!--TODO: translate later and connect with front-->
-  <button class="button-register">{{ title }}</button>
+  <a href="https://terratech-frontend.netlify.app/">
+    <button class="button-register" href="https://terratech-frontend.netlify.app/">{{ title }}</button>
+  </a>
 </template>
 
 <style scoped>
