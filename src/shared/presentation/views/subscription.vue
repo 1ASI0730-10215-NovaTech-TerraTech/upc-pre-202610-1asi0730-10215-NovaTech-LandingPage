@@ -3,6 +3,8 @@
 import FooterContent from "../components/footer-content.vue";
 import ToolbarContent from "../components/toolbar-content.vue";
 import ButtonRegister from "../components/button-register.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <template>
@@ -12,42 +14,38 @@ import ButtonRegister from "../components/button-register.vue";
 
   <main>
     <div class="hero-container">
-      <!--TODO: Translate later-->
       <h1>TERRATECH</h1>
-      <p>We want you to feel confident in farming with data. For a limited time, we're offering temporary trial passes for our platform. Experience the precision of LoRaWAN technology before anyone else.</p>
-      <button-register title="Get Now!"/>
+      <p>{{t('routes.subscription.hero.subtitle')}}</p>
+      <button-register :title="t('routes.subscription.hero.button')"/>
     </div>
 
     <div class="subscription-container">
       <article>
-        <!--TODO: Translate later-->
         <h2>Freemium</h2>
-        <button-register title="Buy Now"/>
-        <p>Manual plot registration: Digitize your crop information step by step.</p>
-        <p>Best practices library: Access technical guides and agricultural management tutorials.</p>
-        <p>Regional weather report: Check the real-time weather forecast for your area.</p>
-        <p>Community forum: Connect with other farmers and get answers to basic questions.</p>
-        <p>Email support: Technical assistance for using the platform.</p>
+        <button-register :title="t('routes.subscription.subscriptions.article-01.button')"/>
+        <p>{{ t('routes.subscription.subscriptions.article-01.point-01') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-01.point-02') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-01.point-03') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-01.point-04') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-01.point-05') }}</p>
       </article>
 
       <article>
-        <!--TODO: Translate later-->
         <h2>Premium</h2>
-        <button-register title="Buy Now"/>
-        <p>Everything about the Freemium plan.</p>
-        <p>IoT Sensor Kit: Monitoring of soil moisture, temperature and nutrients.</p>
-        <p>LoRaWAN connectivity: Your sensors work even in areas where the internet doesn't reach.</p>
-        <p>Live metrics dashboard: View the real-time status of your field from anywhere.</p>
-        <p>Priority support via WhatsApp: Fast assistance for any technical issues.</p>
+        <button-register :title="t('routes.subscription.subscriptions.article-02.button')"/>
+        <p>{{ t('routes.subscription.subscriptions.article-02.point-01') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-02.point-02') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-02.point-03') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-02.point-04') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-02.point-05') }}</p>
       </article>
 
       <article>
-        <!--TODO: Translate later-->
         <h2>Plus</h2>
-        <button-register title="Buy Now"/>
-        <p>Everything included in the Premium plan.</p>
-        <p>Multi-user Management: Ideal for cooperatives or companies with multiple technical advisors.</p>
-        <p>Traceability via QR Code: Generate smart labels so your buyers can see the origin of the product.</p>
+        <button-register :title="t('routes.subscription.subscriptions.article-03.button')"/>
+        <p>{{ t('routes.subscription.subscriptions.article-03.point-01') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-03.point-02') }}</p>
+        <p>{{ t('routes.subscription.subscriptions.article-03.point-03') }}</p>
       </article>
     </div>
   </main>
