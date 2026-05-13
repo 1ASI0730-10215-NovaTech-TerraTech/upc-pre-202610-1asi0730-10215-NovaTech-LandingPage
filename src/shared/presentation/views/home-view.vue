@@ -1,8 +1,8 @@
 <script setup>
 
 import ToolbarContent from "../components/toolbar-content.vue";
-import FooterContent from "../components/footer-content.vue";
-import ButtonRegister from "../components/button-register.vue";
+import FooterContentComponent from "../components/footer-content-component.vue";
+import ButtonRegisterComponent from "../components/button-register-component.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
@@ -16,64 +16,55 @@ const { t } = useI18n();
   <main>
     <section class="hero-container">
       <div class="hero-content-text">
-        <!--TODO: Translate later-->
         <h1>{{t('routes.home.hero.title')}}</h1>
         <p>{{t('routes.home.hero.subtitle')}}</p>
-        <button-register :title="t('routes.home.hero.button')"/>
+        <button-register-component :title="t('routes.home.hero.button')"/>
       </div>
       <div class="hero-content-image"/>
     </section>
 
     <section class="features-container">
-      <!--TODO: Translate later-->
       <h1>{{t('routes.home.features.title')}}</h1>
       <div class="features-content-articles">
         <article>
           <img src="/assets/iot-sensors.webp" alt="iot-sensor"/>
-          <!--TODO: Translate later-->
           <h2>{{t('routes.home.features.iot.title')}}</h2>
           <h3>{{t('routes.home.features.iot.subtitle')}}</h3>
-          <p>&oplus;  <a href="#">{{t('routes.home.features.see-more')}}</a></p>
+          <p>&oplus;  <router-link to="/about">{{t('routes.home.features.see-more')}}</router-link></p>
         </article>
 
         <article>
           <img src="/assets/fertility-map.webp" alt="fertility-map"/>
-          <!--TODO: Translate later-->
           <h2>{{t('routes.home.features.map.title')}}</h2>
           <h3>{{t('routes.home.features.map.subtitle')}}</h3>
-          <p>&oplus;  <a href="#">{{t('routes.home.features.see-more')}}</a></p>
+          <p>&oplus;  <router-link to="/about">{{t('routes.home.features.see-more')}}</router-link></p>
         </article>
 
         <article>
           <img src="/assets/predictive-alerts.webp" alt="predictive-alerts"/>
-          <!--TODO: Translate later-->
           <h2>{{t('routes.home.features.alerts.title')}}</h2>
           <h3>{{t('routes.home.features.alerts.subtitle')}}</h3>
-          <p>&oplus;  <a href="#">{{t('routes.home.features.see-more')}}</a></p>
+          <p>&oplus;  <router-link to="/about">{{t('routes.home.features.see-more')}}</router-link></p>
         </article>
       </div>
     </section>
 
     <section class="reviews-container">
-      <!--TODO: Translate later-->
       <h1>{{t('routes.home.reviews.title')}}</h1>
       <div class="reviews-content-article">
         <article>
           <img src="/assets/community.webp" alt="community"/>
-          <!--TODO: Translate later-->
           <h2>{{t('routes.home.reviews.review-01.title')}}</h2>
           <p>{{t('routes.home.reviews.review-01.subtitle')}}</p>
         </article>
         <article>
           <img src="/assets/ehr-certificate.webp" alt="ehr-certificate"/>
-          <!--TODO: Translate later-->
           <h2>{{t('routes.home.reviews.review-02.title')}}</h2>
           <p>{{t('routes.home.reviews.review-02.subtitle')}}</p>
         </article>
 
         <article>
           <img src="/assets/lorawan-certificate.webp" alt="lorawan-certificate"/>
-          <!--TODO: Translate later-->
           <h2>{{t('routes.home.reviews.review-03.title')}}</h2>
           <p>{{t('routes.home.reviews.review-03.subtitle')}}</p>
         </article>
@@ -82,7 +73,7 @@ const { t } = useI18n();
   </main>
 
   <footer>
-    <footer-content/>
+    <footer-content-component/>
   </footer>
 
 </template>

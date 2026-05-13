@@ -1,7 +1,7 @@
 <script setup>
 
 import LanguageSwitcher from "./language-switcher-component.vue";
-import ButtonRegister from "./button-register.vue";
+import ButtonRegisterComponent from "./button-register-component.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
@@ -14,11 +14,11 @@ const { t } = useI18n();
     </div>
     <div class="toolbar-content-text">
       <ul>
-        <li><a href="#">{{ t('components.toolbar.home') }}</a></li>
-        <li><a href="#">{{ t('components.toolbar.about') }}</a></li>
-        <li><a href="#">{{ t('components.toolbar.subscription') }}</a></li>
+        <li><router-link to="/home">{{ t('components.toolbar.home') }}</router-link></li>
+        <li><router-link to="/about">{{ t('components.toolbar.about') }}</router-link></li>
+        <li><router-link to="/subscription">{{ t('components.toolbar.subscription') }}</router-link></li>
       </ul>
-      <button-register :title="t('components.toolbar.button-register')"/>
+      <button-register-component :title="t('components.toolbar.button-register')"/>
       <language-switcher/>
     </div>
   </nav>

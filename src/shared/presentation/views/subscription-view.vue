@@ -1,8 +1,8 @@
 <script setup>
 
-import FooterContent from "../components/footer-content.vue";
+import FooterContentComponent from "../components/footer-content-component.vue";
 import ToolbarContent from "../components/toolbar-content.vue";
-import ButtonRegister from "../components/button-register.vue";
+import ButtonRegisterComponent from "../components/button-register-component.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
@@ -16,13 +16,13 @@ const { t } = useI18n();
     <div class="hero-container">
       <h1>TERRATECH</h1>
       <p>{{t('routes.subscription.hero.subtitle')}}</p>
-      <button-register :title="t('routes.subscription.hero.button')"/>
+      <button-register-component :title="t('routes.subscription.hero.button')"/>
     </div>
 
     <div class="subscription-container">
       <article>
         <h2>Freemium</h2>
-        <button-register :title="t('routes.subscription.subscriptions.article-01.button')"/>
+        <button-register-component :title="t('routes.subscription.subscriptions.article-01.button')"/>
         <p>{{ t('routes.subscription.subscriptions.article-01.point-01') }}</p>
         <p>{{ t('routes.subscription.subscriptions.article-01.point-02') }}</p>
         <p>{{ t('routes.subscription.subscriptions.article-01.point-03') }}</p>
@@ -32,7 +32,7 @@ const { t } = useI18n();
 
       <article>
         <h2>Premium</h2>
-        <button-register :title="t('routes.subscription.subscriptions.article-02.button')"/>
+        <button-register-component :title="t('routes.subscription.subscriptions.article-02.button')"/>
         <p>{{ t('routes.subscription.subscriptions.article-02.point-01') }}</p>
         <p>{{ t('routes.subscription.subscriptions.article-02.point-02') }}</p>
         <p>{{ t('routes.subscription.subscriptions.article-02.point-03') }}</p>
@@ -42,7 +42,7 @@ const { t } = useI18n();
 
       <article>
         <h2>Plus</h2>
-        <button-register :title="t('routes.subscription.subscriptions.article-03.button')"/>
+        <button-register-component :title="t('routes.subscription.subscriptions.article-03.button')"/>
         <p>{{ t('routes.subscription.subscriptions.article-03.point-01') }}</p>
         <p>{{ t('routes.subscription.subscriptions.article-03.point-02') }}</p>
         <p>{{ t('routes.subscription.subscriptions.article-03.point-03') }}</p>
@@ -51,7 +51,7 @@ const { t } = useI18n();
   </main>
 
   <footer>
-    <footer-content/>
+    <footer-content-component/>
   </footer>
 </template>
 
