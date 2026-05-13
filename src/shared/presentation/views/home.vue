@@ -3,6 +3,8 @@
 import ToolbarContent from "../components/toolbar-content.vue";
 import FooterContent from "../components/footer-content.vue";
 import ButtonRegister from "../components/button-register.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <template>
@@ -15,65 +17,65 @@ import ButtonRegister from "../components/button-register.vue";
     <section class="hero-container">
       <div class="hero-content-text">
         <!--TODO: Translate later-->
-        <h1>TerraTech: Intelligence for the land, confidence for your table</h1>
-        <p>Root-to-root innovation. TerraTech democratizes agricultural technology to create a future where farming is more predictable, advisors are more accurate, and consumers finally know the true story behind what they eat. Climate and human intelligence to feed the world with truth.</p>
-        <button-register title="Get Now"/>
+        <h1>{{t('routes.home.hero.title')}}</h1>
+        <p>{{t('routes.home.hero.subtitle')}}</p>
+        <button-register :title="t('routes.home.hero.button')"/>
       </div>
       <div class="hero-content-image"/>
     </section>
 
     <section class="features-container">
       <!--TODO: Translate later-->
-      <h1>Application Features</h1>
+      <h1>{{t('routes.home.features.title')}}</h1>
       <div class="features-content-articles">
         <article>
           <img src="/assets/iot-sensors.webp" alt="iot-sensor"/>
           <!--TODO: Translate later-->
-          <h2>IoT Sensors</h2>
-          <h3>It constantly measures soil moisture, temperature, and N-P-K levels to make accurate decisions.</h3>
-          <p>&oplus;  <a href="#">See more</a></p>
+          <h2>{{t('routes.home.features.iot.title')}}</h2>
+          <h3>{{t('routes.home.features.iot.subtitle')}}</h3>
+          <p>&oplus;  <a href="#">{{t('routes.home.features.see-more')}}</a></p>
         </article>
 
         <article>
           <img src="/assets/fertility-map.webp" alt="fertility-map"/>
           <!--TODO: Translate later-->
-          <h2>Fertility Map</h2>
-          <h3>Identify critical areas using a satellite view and a color-coded heat map based on crop health.</h3>
-          <p>&oplus;  <a href="#">See more</a></p>
+          <h2>{{t('routes.home.features.map.title')}}</h2>
+          <h3>{{t('routes.home.features.map.subtitle')}}</h3>
+          <p>&oplus;  <a href="#">{{t('routes.home.features.see-more')}}</a></p>
         </article>
 
         <article>
           <img src="/assets/predictive-alerts.webp" alt="predictive-alerts"/>
           <!--TODO: Translate later-->
-          <h2>Predictive Alerts</h2>
-          <h3>Receive immediate notifications and irrigation recommendations based on soil condition and weather forecast.</h3>
-          <p>&oplus;  <a href="#">See more</a></p>
+          <h2>{{t('routes.home.features.alerts.title')}}</h2>
+          <h3>{{t('routes.home.features.alerts.subtitle')}}</h3>
+          <p>&oplus;  <a href="#">{{t('routes.home.features.see-more')}}</a></p>
         </article>
       </div>
     </section>
 
     <section class="reviews-container">
       <!--TODO: Translate later-->
-      <h1>Reviews and Certifications</h1>
+      <h1>{{t('routes.home.reviews.title')}}</h1>
       <div class="reviews-content-article">
         <article>
           <img src="/assets/community.webp" alt="community"/>
           <!--TODO: Translate later-->
-          <h2>+150 Connected Families</h2>
-          <p>We are not just software; we are a network of producers and buyers who exchange information and trust for fairer agriculture.</p>
+          <h2>{{t('routes.home.reviews.review-01.title')}}</h2>
+          <p>{{t('routes.home.reviews.review-01.subtitle')}}</p>
         </article>
         <article>
           <img src="/assets/ehr-certificate.webp" alt="ehr-certificate"/>
           <!--TODO: Translate later-->
-          <h2>35% Less Water Waste</h2>
-          <p>Our precision irrigation algorithms ensure that every drop counts, optimizing water resources based on actual soil moisture.</p>
+          <h2>{{t('routes.home.reviews.review-02.title')}}</h2>
+          <p>{{t('routes.home.reviews.review-02.subtitle')}}</p>
         </article>
 
         <article>
           <img src="/assets/lorawan-certificate.webp" alt="lorawan-certificate"/>
           <!--TODO: Translate later-->
-          <h2>Resilient LoRaWAN™ Certification</h2>
-          <p>We guarantee real-time monitoring even in areas without internet signal, using long-range, low-power technology.</p>
+          <h2>{{t('routes.home.reviews.review-03.title')}}</h2>
+          <p>{{t('routes.home.reviews.review-03.subtitle')}}</p>
         </article>
       </div>
     </section>

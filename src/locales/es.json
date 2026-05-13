@@ -1,0 +1,116 @@
+{
+  "routes": {
+    "home": {
+      "hero": {
+        "title": "TerraTech: Inteligencia para la tierra, confianza para su mesa.",
+        "subtitle": "Innovación integral. TerraTech democratiza la tecnología agrícola para crear un futuro donde la agricultura sea más predecible, los asesores más precisos y los consumidores conozcan por fin la verdadera historia de lo que comen. El clima y la inteligencia humana para alimentar al mundo con la verdad.",
+        "button": "Obtenlo Ahora!"
+      },
+      "features": {
+        "title": "Caraterísticas de la aplicación",
+        "iot": {
+          "title": "Sensores IoT",
+          "subtitle": "Mide constantemente la humedad del suelo, la temperatura y los niveles de N-P-K para tomar decisiones precisas."
+        },
+        "map": {
+          "title": "Mapa de Fertilidad",
+          "subtitle": "Identifica áreas críticas mediante una vista satelital y un mapa de calor codificado por colores según la salud del cultivo."
+        },
+        "alerts": {
+          "title": "Alertas Predictivas",
+          "subtitle": "Recibe notificaciones inmediatas y recomendaciones de riego basadas en la condición del suelo y el pronóstico del tiempo."
+        },
+        "see-more": "Ver más"
+      },
+      "reviews": {
+        "title": "Reseñas y Certificaciones",
+        "review-01": {
+          "title": "+150 Familias Conectadas",
+          "subtitle": "No somos solo software; somos una red de productores y compradores que intercambian información y confianza por una agricultura más justa."
+        },
+        "review-02": {
+          "title": "35% Menos de Desperdicio de Agua",
+          "subtitle": "Nuestros algoritmos de riego de precisión aseguran que cada gota cuente, optimizando los recursos hídricos en función de la humedad real del suelo."
+        },
+        "review-03": {
+          "title": "Certificación Resiliente LoRaWAN™",
+          "subtitle": "Garantizamos el monitoreo en tiempo real incluso en zonas sin señal de internet, utilizando tecnología de largo alcance y bajo consumo energético."
+        }
+      }
+    },
+    "about": {
+      "tabs": {
+        "about": {
+          "about": "Sobre nosotros",
+          "title": "Sobre nosotros",
+          "text": "En TerraTech, nos fundamos bajo la convicción de que el futuro de la agricultura no solo reside en la tecnología, sino también en un profundo respeto por quienes trabajan la tierra. Somos un ecosistema tecnológico diseñado para cerrar la brecha entre los métodos tradicionales y la precisión digital, ofreciendo soluciones de monitoreo inteligente que se adaptan a las condiciones más desafiantes. Nuestra misión es empoderar a los productores locales mediante el uso de redes LoRaWAN, asegurando que la falta de conectividad o energía nunca sea un obstáculo para la seguridad de sus cultivos. Creemos firmemente en la transparencia como motor de cambio; por ello, conectamos a agricultores, asesores y consumidores en una red de confianza donde la conservación del agua, la salud del suelo y la trazabilidad de los productos son la base de una economía más justa y sostenible. No solo recolectamos datos: cultivamos certeza, protegemos el esfuerzo de la comunidad y pavimentamos el camino para que cada cosecha sea un testimonio de calidad, transparencia y orgullo nacional."
+        },
+        "features": {
+          "features": "Características",
+          "title": "Características de la Aplicación",
+          "text": "La arquitectura técnica de TerraTech se basa en la precisión y la eficiencia de los recursos. La implementación de nodos IoT permite el monitoreo constante de variables biopedológicas clave, asegurando una gestión nutricional óptima. Esta red de datos se integra con algoritmos de visión computacional para generar Mapas de Fertilidad dinámicos, proporcionando una capa de inteligencia geoespacial sobre el terreno. El ecosistema culmina en un motor de Alertas Predictivas basado en modelos climáticos locales, permitiendo una agricultura proactiva que reduce el desperdicio de insumos y maximiza el rendimiento bajo cualquier condición climática, incluso en áreas con conectividad limitada gracias a nuestra tecnología LoRaWAN."
+        },
+        "community": {
+          "community": "Comunidad",
+          "title": "Nuestra Comunidad",
+          "text": "Construimos un puente de confianza entre el campo y la mesa. Nuestra comunidad permite a los agricultores compartir proyecciones de sus necesidades de insumos basadas en datos reales, recibiendo asesoramiento oportuno y soporte técnico. Al mismo tiempo, empoderamos a los proveedores con inteligencia de mercado, permitiéndoles anticipar la demanda de sus tiendas y ofrecer exactamente lo que el suelo requiere, optimizando sus ventas e inventarios. Finalmente, el usuario final deja de ser un espectador para convertirse en parte de la historia, accediendo a una trazabilidad completa de sus alimentos. En TerraTech, cada dato compartido es un paso hacia una agricultura más justa, predecible y transparente para todos."
+        },
+        "developers": {
+          "developers": "Desarrolladores",
+          "title": "Desarrolladores",
+          "text": "El equipo de desarrollo de TerraTech aplica las mejores prácticas de la industria y tecnologías modernas para garantizar sistemas de alta calidad, eficientes y escalables. Nos enfocamos en diseñar arquitecturas limpias y soluciones innovadoras que permitan la mejora continua en cada etapa del proyecto.",
+          "members": {
+            "luis": "Me apasiona el desarrollo de software y la resolución de problemas mediante soluciones innovadoras. Aplico las mejores prácticas y tecnologías modernas para crear sistemas robustos, escalables y de alta calidad, priorizando siempre el aprendizaje continuo en cada proyecto de desarrollo.",
+            "rodrigo": "Me motiva el diseño de soluciones funcionales e innovadoras para desafíos técnicos. Mi enfoque se centra en la creación de herramientas digitales robustas, priorizando la optimización de procesos y la implementación de estándares de calidad que permitan un crecimiento continuo.",
+            "guillermo": "Me apasiona investigar y analizar problemas para proponer soluciones innovadoras. Me esfuerzo por desarrollar software integral aplicando las mejores prácticas y tecnologías modernas que aseguren eficiencia, escalabilidad, calidad y mejora continua en cada uno de mis proyectos tecnológicos.",
+            "breithner": "Poseo sólidas habilidades en C++ y diseño de modelos relacionales. Tengo experiencia intermedia con bases de datos SQL y NoSQL (MongoDB), incluyendo la validación de reglas y aggregation pipelines para garantizar datos estructurados y eficientes.",
+            "jorge": "Tengo habilidades intermedias en C++, C#, HTML y CSS, además de conocimientos básicos de Python y Java. Soy responsable de la comunicación, planificación y desarrollo colaborativo, liderando la organización operativa dentro del equipo."
+          }
+        }
+      }
+    },
+    "subscription": {
+      "hero": {
+        "subtitle": "Queremos que te sientas seguro cultivando con datos. Por tiempo limitado, ofrecemos pases de prueba temporales para nuestra plataforma. Experimenta la precisión de la tecnología LoRaWAN antes que nadie.",
+        "button": "¡Obtener ahora!"
+      },
+      "subscriptions": {
+        "article-01": {
+          "button": "Comprar ahora",
+          "point-01": "Registro manual de parcelas: Digitaliza la información de tus cultivos paso a paso.",
+          "point-02": "Biblioteca de buenas prácticas: Accede a guías técnicas y tutoriales de gestión agrícola.",
+          "point-03": "Reporte climático regional: Consulta el pronóstico del tiempo en tiempo real para tu zona.",
+          "point-04": "Foro comunitario: Conéctate con otros agricultores y resuelve dudas básicas.",
+          "point-05": "Soporte vía correo electrónico: Asistencia técnica para el uso de la plataforma."
+        },
+        "article-02": {
+          "button": "Comprar ahora",
+          "point-01": "Todo lo incluido en el plan Freemium.",
+          "point-02": "Kit de Sensores IoT: Monitoreo de humedad, temperatura y nutrientes del suelo.",
+          "point-03": "Conectividad LoRaWAN: Tus sensores funcionan incluso en zonas donde no llega el internet.",
+          "point-04": "Panel de métricas en vivo: Visualiza el estado de tu campo en tiempo real desde cualquier lugar.",
+          "point-05": "Soporte prioritario vía WhatsApp: Asistencia rápida ante cualquier problema técnico."
+        },
+        "article-03": {
+          "button": "Comprar ahora",
+          "point-01": "Todo lo incluido en el plan Premium.",
+          "point-02": "Gestión multiusuario: Ideal para cooperativas o empresas con varios asesores técnicos.",
+          "point-03": "Trazabilidad vía Código QR: Genera etiquetas inteligentes para que tus compradores vean el origen del producto."
+        }
+      }
+    }
+  },
+  "components": {
+    "toolbar": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "subscription": "Suscripción",
+      "button-register": "Registrarse"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados",
+      "powered": "Desarrollado con",
+      "conditions": "Términos y condiciones"
+    }
+  }
+}

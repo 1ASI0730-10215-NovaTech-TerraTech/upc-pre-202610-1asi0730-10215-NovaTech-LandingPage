@@ -1,0 +1,116 @@
+{
+  "routes": {
+    "home": {
+      "hero": {
+        "title": "TerraTech: Intelligence for the land, confidence for your table",
+        "subtitle": "Root-to-root innovation. TerraTech democratizes agricultural technology to create a future where farming is more predictable, advisors are more accurate, and consumers finally know the true story behind what they eat. Climate and human intelligence to feed the world with truth.",
+        "button": "Get Now!"
+      },
+      "features": {
+        "title": "Application Features",
+        "iot": {
+          "title": "IoT Sensors",
+          "subtitle": "It constantly measures soil moisture, temperature, and N-P-K levels to make accurate decisions."
+        },
+        "map": {
+          "title": "Fertility Map",
+          "subtitle": "Identify critical areas using a satellite view and a color-coded heat map based on crop health."
+        },
+        "alerts": {
+          "title": "Predictive Alerts",
+          "subtitle": "Receive immediate notifications and irrigation recommendations based on soil condition and weather forecast."
+        },
+        "see-more": "See more"
+      },
+      "reviews": {
+        "title": "Reviews and Certifications",
+        "review-01": {
+          "title": "+150 Connected Families",
+          "subtitle": "We are not just software; we are a network of producers and buyers who exchange information and trust for fairer agriculture."
+        },
+        "review-02": {
+          "title": "35% Less Water Waste",
+          "subtitle": "Our precision irrigation algorithms ensure that every drop counts, optimizing water resources based on actual soil moisture."
+        },
+        "review-03": {
+          "title": "Resilient LoRaWAN™ Certification",
+          "subtitle": "We guarantee real-time monitoring even in areas without internet signal, using long-range, low-power technology."
+        }
+      }
+    },
+    "about": {
+      "tabs": {
+        "about": {
+          "about": "About Us",
+          "title": "About Us",
+          "text": "At TerraTech, we were founded on the conviction that the future of agriculture lies not only in technology, but also in a deep respect for those who work the land. We are a technology ecosystem designed to bridge the gap between traditional methods and digital precision, offering smart monitoring solutions that adapt to the most challenging conditions. Our mission is to empower local producers through the use of LoRaWAN networks, ensuring that a lack of connectivity or power is never an obstacle to the security of their crops. We firmly believe in transparency as a driver of change; therefore, we connect farmers, advisors, and consumers in a network of trust where water conservation, soil health, and product traceability are the foundation of a fairer and more sustainable economy. We don't just collect data: we cultivate certainty, protect the community's efforts, and pave the way for every harvest to be a testament to quality, transparency, and national pride."
+        },
+        "features": {
+          "features": "Features",
+          "title": "Application Features",
+          "text": "TerraTech's technical architecture is based on precision and resource efficiency. The implementation of IoT nodes enables constant monitoring of key biopedological variables, ensuring optimal nutritional management. This data network integrates with computer vision algorithms to generate dynamic Fertility Maps, providing a layer of geospatial intelligence on the ground. The ecosystem culminates in a Predictive Alerts engine based on local weather models, enabling proactive agriculture that reduces input waste and maximizes yield under any weather conditions, even in areas with limited connectivity thanks to our LoRaWAN technology."
+        },
+        "community": {
+          "community": "Community",
+          "title": "Our Community",
+          "text": "We build a bridge of trust between the field and the table. Our community allows farmers to share projections of their input needs based on real data, receiving timely advice and technical support. At the same time, we empower suppliers with market intelligence, enabling them to anticipate their store's demand and offer exactly what the soil requires, optimizing their sales and inventory. Finally, the end user goes from being a spectator to becoming part of the story, accessing complete traceability of their food. At TerraTech, every piece of data shared is a step towards fairer, more predictable, and more transparent agriculture for everyone."
+        },
+        "developers": {
+          "developers": "Developers",
+          "title": "Developers",
+          "text": "The TerraTech development team applies industry best practices and modern technologies to ensure high-quality, efficient, and scalable systems. We focus on designing clean architectures and innovative solutions that enable continuous improvement at every stage of the project.",
+          "members": {
+            "luis": "I am passionate about software development and solving problems through innovative solutions. I apply best practices and modern technologies to create robust, scalable, and high-quality systems, always prioritizing continuous learning in every development project.",
+            "rodrigo": "I am motivated by designing functional and innovative solutions to technical challenges. My approach focuses on creating robust digital tools, prioritizing process optimization and implementing quality standards that enable continuous growth.",
+            "guillermo": "I am passionate about researching and analyzing problems to propose innovative solutions. I strive to develop comprehensive software by applying best practices and modern technologies that ensure efficiency, scalability, quality, and continuous improvement in each of my technology projects.",
+            "breithner": "I possess strong skills in C++ and relational model design. I have intermediate experience with SQL and NoSQL (MongoDB) databases, including rule validation and aggregation pipelines to ensure structured and efficient data.",
+            "jorge": "I have intermediate skills in C++, C#, HTML, and CSS, as well as basic knowledge of Python and Java. I am responsible for communication, planning, and collaborative development, leading the operational organization within the team."
+          }
+        }
+      }
+    },
+    "subscription": {
+      "hero": {
+        "subtitle": "We want you to feel confident in farming with data. For a limited time, we're offering temporary trial passes for our platform. Experience the precision of LoRaWAN technology before anyone else.",
+        "button": "Get Now!"
+      },
+      "subscriptions": {
+        "article-01": {
+          "button": "Buy Now",
+          "point-01": "Manual plot registration: Digitize your crop information step by step.",
+          "point-02": "Best practices library: Access technical guides and agricultural management tutorials.",
+          "point-03": "Regional weather report: Check the real-time weather forecast for your area.",
+          "point-04": "Community forum: Connect with other farmers and get answers to basic questions.",
+          "point-05": "Email support: Technical assistance for using the platform."
+        },
+        "article-02": {
+          "button": "Buy Now",
+          "point-01": "Everything about the Freemium plan.",
+          "point-02": "IoT Sensor Kit: Monitoring of soil moisture, temperature and nutrients.",
+          "point-03": "LoRaWAN connectivity: Your sensors work even in areas where the internet doesn't reach.",
+          "point-04": "Live metrics dashboard: View the real-time status of your field from anywhere.",
+          "point-05": "Priority support via WhatsApp: Fast assistance for any technical issues."
+        },
+        "article-03": {
+          "button": "Buy Now",
+          "point-01": "Everything included in the Premium plan.",
+          "point-02": "Multi-user Management: Ideal for cooperatives or companies with multiple technical advisors.",
+          "point-03": "Traceability via QR Code: Generate smart labels so your buyers can see the origin of the product."
+        }
+      }
+    }
+  },
+  "components": {
+    "toolbar": {
+      "home": "Home",
+      "about": "About",
+      "subscription": "Subscription",
+      "button-register": "Register"
+    },
+    "footer": {
+      "rights": "All rights reserved",
+      "powered": "powered by",
+      "conditions": "Terms and conditions"
+    }
+  }
+}

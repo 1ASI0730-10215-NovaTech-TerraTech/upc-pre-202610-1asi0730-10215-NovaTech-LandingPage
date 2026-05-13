@@ -1,29 +1,32 @@
 <script setup>
+
 import FooterContent from "../components/footer-content.vue";
 import ToolbarContent from "../components/toolbar-content.vue";
 
-import { ref } from 'vue';
+import {computed, ref} from 'vue';
+import { useI18n } from "vue-i18n";
 
 const activeTab = ref('about');
+const { t } = useI18n();
 
-const contents = {
+const contents = computed(() => ({
   about: {
-    title: "About Us",
-    text: "At TerraTech, we were founded on the conviction that the future of agriculture lies not only in technology, but also in a deep respect for those who work the land. We are a technology ecosystem designed to bridge the gap between traditional methods and digital precision, offering smart monitoring solutions that adapt to the most challenging conditions. Our mission is to empower local producers through the use of LoRaWAN networks, ensuring that a lack of connectivity or power is never an obstacle to the security of their crops. We firmly believe in transparency as a driver of change; therefore, we connect farmers, advisors, and consumers in a network of trust where water conservation, soil health, and product traceability are the foundation of a fairer and more sustainable economy. We don't just collect data: we cultivate certainty, protect the community's efforts, and pave the way for every harvest to be a testament to quality, transparency, and national pride."
+    title:  t('routes.about.tabs.about.title'),
+    text: t('routes.about.tabs.about.text'),
   },
   features: {
-    title: "Application Features",
-    text: "TerraTech's technical architecture is based on precision and resource efficiency. The implementation of IoT nodes enables constant monitoring of key biopedological variables, ensuring optimal nutritional management. This data network integrates with computer vision algorithms to generate dynamic Fertility Maps, providing a layer of geospatial intelligence on the ground. The ecosystem culminates in a Predictive Alerts engine based on local weather models, enabling proactive agriculture that reduces input waste and maximizes yield under any weather conditions, even in areas with limited connectivity thanks to our LoRaWAN technology.",
+    title:  t('routes.about.tabs.features.title'),
+    text: t('routes.about.tabs.features.text'),
   },
   community: {
-    title: "Our Community",
-    text: "We build a bridge of trust between the field and the table. Our community allows farmers to share projections of their input needs based on real data, receiving timely advice and technical support. At the same time, we empower suppliers with market intelligence, enabling them to anticipate their store's demand and offer exactly what the soil requires, optimizing their sales and inventory. Finally, the end user goes from being a spectator to becoming part of the story, accessing complete traceability of their food. At TerraTech, every piece of data shared is a step towards fairer, more predictable, and more transparent agriculture for everyone.",
+    title:  t('routes.about.tabs.community.title'),
+    text: t('routes.about.tabs.community.text'),
   },
   developers: {
-    title: "Developers",
-    text: "The TerraTech development team applies industry best practices and modern technologies to ensure high-quality, efficient, and scalable systems. We focus on designing clean architectures and innovative solutions that enable continuous improvement at every stage of the project."
+    title: t('routes.about.tabs.developers.title'),
+    text: t('routes.about.tabs.developers.text')
   }
-};
+}));
 </script>
 
 <template>
@@ -42,25 +45,25 @@ const contents = {
             class="tab-item"
             :class="{ active: activeTab === 'about' }"
             @click="activeTab = 'about'"
-        >About us</button>
+        >{{t('routes.about.tabs.about.about')}}</button>
 
         <button
             class="tab-item"
             :class="{ active: activeTab === 'features' }"
             @click="activeTab = 'features'"
-        >Features</button>
+        >{{t('routes.about.tabs.features.features')}}</button>
 
         <button
             class="tab-item"
             :class="{ active: activeTab === 'community' }"
             @click="activeTab = 'community'"
-        >Our community</button>
+        >{{t('routes.about.tabs.community.community')}}</button>
 
         <button
             class="tab-item"
             :class="{ active: activeTab === 'developers' }"
             @click="activeTab = 'developers'"
-        >Developers</button>
+        >{{t('routes.about.tabs.developers.developers')}}</button>
       </nav>
 
       <div class="about-content">
@@ -86,31 +89,31 @@ const contents = {
           <article>
             <img src="/assets/luis.jpeg" alt="Luis Acuña"/>
             <h4>Acuña de la Cruz, Luis Alfredo</h4>
-            <p>I am passionate about software development and solving problems through innovative solutions. I apply best practices and modern technologies to create robust, scalable, and high-quality systems, always prioritizing continuous learning in every development project.</p>
+            <p>{{t('routes.about.tabs.developers.members.luis')}}</p>
           </article>
 
           <article>
             <img src="/assets/rodrigo.jpeg" alt="Rodrigo Aguilar"/>
             <h4>Aguilar Untiveros, Rodrigo Fabrizio</h4>
-            <p>I am motivated by designing functional and innovative solutions to technical challenges. My approach focuses on creating robust digital tools, prioritizing process optimization and implementing quality standards that enable continuous growth.</p>
+            <p>{{t('routes.about.tabs.developers.members.rodrigo')}}</p>
           </article>
 
           <article>
             <img src="/assets/guillermo.jpeg" alt="Guillermo Howard"/>
             <h4>Howard Robles, Guillermo Arturo</h4>
-            <p>I am passionate about researching and analyzing problems to propose innovative solutions. I strive to develop comprehensive software by applying best practices and modern technologies that ensure efficiency, scalability, quality, and continuous improvement in each of my technology projects.</p>
+            <p>{{t('routes.about.tabs.developers.members.guillermo')}}</p>
           </article>
 
           <article>
             <img src="/assets/breithner.jpeg" alt="Breithner Perez"/>
             <h4>Perez Encarnacion, Breithner Rodolfo</h4>
-            <p>I possess strong skills in C++ and relational model design. I have intermediate experience with SQL and NoSQL (MongoDB) databases, including rule validation and aggregation pipelines to ensure structured and efficient data.</p>
+            <p>{{t('routes.about.tabs.developers.members.breithner')}}</p>
           </article>
 
           <article>
             <img src="/assets/jorge.jpeg" alt="Jorge Retuerto"/>
             <h4>Retuerto Rodríguez, Jorge Manuel</h4>
-            <p>I have intermediate skills in C++, C#, HTML, and CSS, as well as basic knowledge of Python and Java. I am responsible for communication, planning, and collaborative development, leading the operational organization within the team.</p>
+            <p>{{t('routes.about.tabs.developers.members.jorge')}}</p>
           </article>
         </div>
       </div>
