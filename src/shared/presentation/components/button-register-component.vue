@@ -9,12 +9,21 @@ defineProps({
 </script>
 
 <template>
-  <a href="https://terratech-frontend.netlify.app/">
-    <button class="button-register" href="https://terratech-frontend.netlify.app/">{{ title }}</button>
+  <a href="https://terratech-frontend.netlify.app/" class="button-link">
+    <button class="button-register">{{ title }}</button>
   </a>
 </template>
 
 <style scoped>
+.button-link {
+  display: block;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  flex: 0 0 200px;
+  text-decoration: none;
+}
+
 .button-register {
   background-color: #00BB31;
   color: white;
@@ -24,9 +33,14 @@ defineProps({
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
-  width: fit-content;
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
 }
 .button-register:hover {
-  background-color: #218838;
+  background-color: #28a745;
 }
 </style>
