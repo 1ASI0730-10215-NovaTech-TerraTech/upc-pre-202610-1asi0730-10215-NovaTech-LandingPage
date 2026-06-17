@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <a href="https://terratech-frontend.netlify.app/" class="button-link">
+  <a href="https://novatechfrontend.vercel.app/" class="button-link">
     <button class="button-register">{{ title }}</button>
   </a>
 </template>
