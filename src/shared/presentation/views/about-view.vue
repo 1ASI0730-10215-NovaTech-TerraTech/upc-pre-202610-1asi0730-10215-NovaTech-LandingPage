@@ -71,13 +71,11 @@ const contents = computed(() => ({
         <p class="dynamic-text">{{ contents[activeTab].text }}</p>
 
         <div v-if="activeTab === 'about'">
-          <!--TODO: The recording of the 'about' segments is left for future installments.-->
-          <img class="about-image" src="/assets/about-the-team.webp" alt="fake-about-the-team"/>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YjfLNpPMLpg?si=iVY1sQM4LFxsOI1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div v-if="activeTab === 'features'">
-          <!--TODO: The recording of the 'about' segments is left for future installments.-->
-          <img class="about-image" src="/assets/about-the-product.webp" alt="fake-about-the-product"/>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/g50PX1_6f_M?si=RAumiCTPn0OGrpZh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div v-if="activeTab === 'community'">
