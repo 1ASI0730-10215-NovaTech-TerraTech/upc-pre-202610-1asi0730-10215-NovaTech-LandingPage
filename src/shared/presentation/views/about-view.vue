@@ -75,7 +75,7 @@ const contents = computed(() => ({
         </div>
 
         <div v-if="activeTab === 'features'">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/g50PX1_6f_M?si=RAumiCTPn0OGrpZh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wW-WDw9xxcw?si=31TfLZYFpdeB43Kv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div v-if="activeTab === 'community'">
